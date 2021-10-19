@@ -1,0 +1,24 @@
+---
+title: "my-vignette"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{my-vignette}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(lab05group5)
+```
+This vignette summaries the functions in package lab5Group05.
+The function has 3 parameters:name, zoom_l, map_type.
+The parameter name should be a character which is the name of a location.
+The parameter zoom_l should be a number which is an integer between 9 to 12.
+The parameter maptype should be a character out of three types:"toner/terrain/watercolor".
